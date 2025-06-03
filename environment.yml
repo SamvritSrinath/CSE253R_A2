@@ -1,0 +1,19 @@
+name: music-tf-pytorch
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - tqdm
+  - jupyterlab
+  - ipykernel
+  - music21
+  - pip:
+      - torch==2.3.0+cu118
+      - torchvision==0.18.0+cu118
+      - torchaudio==2.3.0+cu118
+      - --extra-index-url https://download.pytorch.org/whl/cu118
